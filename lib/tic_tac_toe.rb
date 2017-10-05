@@ -62,7 +62,7 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.detect? | winner |
+    WIN_COMBINATIONS.detect? do | winner |
       @board[winner[0]] == @board[winner[1]] && @board[winner[1]] == @board[winner[2]] && @board[winner[0]] != " "
     end
   end
@@ -83,7 +83,6 @@ class TicTacToe
     if !won?
       token = won?
       return @board[token[0]]
-
     end
   end
 
