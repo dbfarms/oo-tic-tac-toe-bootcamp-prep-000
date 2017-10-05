@@ -21,7 +21,7 @@ class TicTacToe
     end
 
     if won?
-      token = winner 
+      token = winner
       puts "Congratulations #{token}!"
     else
       puts "Cat's Game!"
@@ -41,7 +41,7 @@ class TicTacToe
     user_input.to_i - 1
   end
 
-  def move(index, player = "X")
+  def move(index, player)
     @board[index] = player
   end
 
@@ -92,9 +92,9 @@ class TicTacToe
   end
 
   def winner
-    if !won?
-      token = won?
-      return @board[token[0]]
+    if won?
+      combo = won?
+      return @board[combo[0]]
     end
   end
 
