@@ -21,12 +21,12 @@ class TicTacToe
     end
 
     if won?
-      token = won?
-      puts "Congratulations #{winner}!"
+      token = winner 
+      puts "Congratulations #{token}!"
     else
       puts "Cat's Game!"
     end
-    
+
   end
 
   def display_board
