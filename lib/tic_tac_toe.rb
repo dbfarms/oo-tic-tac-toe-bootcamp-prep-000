@@ -60,9 +60,12 @@ class TicTacToe
       if @board[winner[0]] == @board[winner[1]] &&
         @board[winner[1]] == @board[winner[2]] &&
         @board[winner[0]] != " "
-          return winner 
+          return winner
       end
     end
   end
+
+  def full?
+    @board.detect?{|token| token == ' '}
 
 end
