@@ -62,7 +62,7 @@ class TicTacToe
         @board[winner[0]] != " "
           return winner
         else
-          return false 
+          return false
       end
     end
   end
@@ -75,12 +75,12 @@ class TicTacToe
     !won? && full?
   end
 
-  def over? 
-    won? || full? 
+  def over?
+    won? || full?
   end
 
-  def winner?
-    @board 
+  def winner
+    @board
   end
 
 end
