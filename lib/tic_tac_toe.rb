@@ -20,9 +20,8 @@ class TicTacToe
       turn
     end
     if won?
-      token = winner
-      puts "Congratulations #{token}!"
-    elsif draw? 
+      puts "Congratulations #{winner}!"
+    elsif draw?
       puts "Cat's Game!"
     end
 
