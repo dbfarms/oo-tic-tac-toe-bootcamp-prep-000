@@ -61,6 +61,8 @@ class TicTacToe
         @board[winner[1]] == @board[winner[2]] &&
         @board[winner[0]] != " "
           return winner
+        else
+          return false 
       end
     end
   end
@@ -71,6 +73,14 @@ class TicTacToe
 
   def draw?
     !won? && full?
-  end 
+  end
+
+  def over? 
+    won? || full? 
+  end
+
+  def winner?
+    @board 
+  end
 
 end
