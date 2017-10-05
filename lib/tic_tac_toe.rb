@@ -19,7 +19,6 @@ class TicTacToe
     while !over?
       turn
     end
-
     if won?
       token = winner
       puts "Congratulations #{token}!"
@@ -80,7 +79,7 @@ class TicTacToe
   end
 
   def full?
-    @board.detect {|token| token == ' '}
+    @board.all? {|token| token == 'X' || 'O'}
   end
 
   def draw?
