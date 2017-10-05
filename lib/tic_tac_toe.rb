@@ -19,6 +19,14 @@ class TicTacToe
     while !over?
       turn
     end
+
+    if won?
+      token = won?
+      puts "Congratulations #{winner}!"
+    else
+      puts "Cat's Game!"
+    end
+    
   end
 
   def display_board
