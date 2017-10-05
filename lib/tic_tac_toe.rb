@@ -70,7 +70,6 @@ class TicTacToe
         else
           return false
       end
-    end
   end
 
   def full?
