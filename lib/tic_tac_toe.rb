@@ -63,9 +63,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.each | winner |
-      if @board[winner[0]] == @board[winner[1]] &&
-        @board[winner[1]] == @board[winner[2]] &&
-        @board[winner[0]] != " "
+      if @board[winner[0]] == @board[winner[1]] && @board[winner[1]] == @board[winner[2]] && @board[winner[0]] != " "
           return winner
         else
           return false
