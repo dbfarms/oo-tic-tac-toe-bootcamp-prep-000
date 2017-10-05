@@ -53,7 +53,7 @@ class TicTacToe
       move(index, current_player)
       display_board
     else
-      turn 
+      turn
     end
   end
 
@@ -66,7 +66,7 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.detect? do | winner |
+    WIN_COMBINATIONS.detect do | winner |
       @board[winner[0]] == @board[winner[1]] && @board[winner[1]] == @board[winner[2]] && @board[winner[0]] != " "
     end
   end
