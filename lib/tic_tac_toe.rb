@@ -72,7 +72,7 @@ class TicTacToe
   end
 
   def full?
-    @board.detect?{|token| token == ' '}
+    @board.detect {|token| token == ' '}
   end
 
   def draw?
