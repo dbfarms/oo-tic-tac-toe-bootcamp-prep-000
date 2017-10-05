@@ -67,5 +67,10 @@ class TicTacToe
 
   def full?
     @board.detect?{|token| token == ' '}
+  end
+
+  def draw?
+    !won? && full?
+  end 
 
 end
