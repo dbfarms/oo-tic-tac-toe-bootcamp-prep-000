@@ -15,6 +15,12 @@ class TicTacToe
   [6,4,2]
 ]
 
+  def player
+    while !over?
+      turn
+    end
+  end 
+
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
