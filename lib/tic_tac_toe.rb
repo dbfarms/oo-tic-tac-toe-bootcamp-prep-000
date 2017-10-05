@@ -22,7 +22,7 @@ class TicTacToe
     if won?
       token = winner
       puts "Congratulations #{token}!"
-    else
+    elsif draw? 
       puts "Cat's Game!"
     end
 
