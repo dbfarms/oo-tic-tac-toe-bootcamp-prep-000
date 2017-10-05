@@ -56,7 +56,10 @@ class TicTacToe
   end
 
   def won?
-    
+    WIN_COMBINATIONS.each | winner |
+      if @board[winner[0]] == @board[winner[1]] &&
+        @board[winner[1]] == @board[winner[2]] &&
+        
   end
 
 end
