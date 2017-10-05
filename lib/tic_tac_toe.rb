@@ -80,7 +80,11 @@ class TicTacToe
   end
 
   def winner
-    @board
+    if won? ! = false
+      token = won?
+      return @board[token[0]]
+
+    end
   end
 
 end
